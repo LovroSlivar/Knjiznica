@@ -1,0 +1,86 @@
+﻿@model List<Rezervacije>
+
+<div class="about-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="abouttitle">
+                    <h2>Posuđene Knjige</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Books -->
+<div class="Knjige">
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Naziv</th>
+                    <th>Posudba od</th>
+                    <th>Posudba do</th>
+                    @if (User.Identity.IsAuthenticated == true)
+                    {
+                        @if (User.IsInRole("User") && !User.IsInRole("Admin"))
+                        {
+                            <th>Recenzija</th>
+                            <th>Akcije</th>
+                        }
+                    }
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var rezervacija in Model)
+                {
+                    <tr>
+                        <td>@rezervacija.Naziv</td>
+                        <td>@rezervacija.posudba_od</td>
+                        <td>@rezervacija.posudba_do</td>
+                        @if (User.Identity.IsAuthenticated == true)
+                        {
+                            @if (User.IsInRole("User") && !User.IsInRole("Admin"))
+                            {
+                                if (rezervacija.trebaRecenziju)
+                                {
+                                    <td>
+                                        <div class="mb-3">
+                                            <a asp-action="Recenzija" asp-controller="Knjige" asp-route-knjigaID="@rezervacija.knjigaID" asp-route-bodovi="1"><small class="fa fa-star text-primary"></small></a>
+                                            <a asp-action="Recenzija" asp-controller="Knjige" asp-route-knjigaID="@rezervacija.knjigaID" asp-route-bodovi="2"><small class="fa fa-star text-primary"></small></a>
+                                            <a asp-action="Recenzija" asp-controller="Knjige" asp-route-knjigaID="@rezervacija.knjigaID" asp-route-bodovi="3"><small class="fa fa-star text-primary"></small></a>
+                                            <a asp-action="Recenzija" asp-controller="Knjige" asp-route-knjigaID="@rezervacija.knjigaID" asp-route-bodovi="4"><small class="fa fa-star text-primary"></small></a>
+                                            <a asp-action="Recenzija" asp-controller="Knjige" asp-route-knjigaID="@rezervacija.knjigaID" asp-route-bodovi="5"><small class="fa fa-star text-primary"></small></a>
+                                        </div>
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td>
+                                        @for (int i = 0; i < rezervacija.bodovi; i++)
+                                        {
+                                            <small class="fa fa-heart text-primary"></small>
+                                        }
+                                    </td>
+                                }
+                                if (rezervacija.trebaVratiti)
+                                {
+                                    <td>
+                                        <a asp-action="VratiKnjigu" asp-controller="Knjige" asp-route-lagerID="@rezervacija.lagerID" class="btn btn-primary">Vrati</a>
+
+                                    </td>
+                                }
+
+
+
+                            }
+                        }
+
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>
+<!-- end Books -->

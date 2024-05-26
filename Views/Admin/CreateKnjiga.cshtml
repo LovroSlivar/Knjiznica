@@ -1,0 +1,74 @@
+﻿@model Knjiznica.Models.KnjigaViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center"> 
+</div>
+<form asp-action="CreateKnjiga" method="post">
+
+    <div class="text-danger">
+        @TempData["ErrorMessage"]
+    </div>
+    <div class="form-group">
+        <label asp-for="Naslov" class="control-label"></label>
+        <input asp-for="Naslov" class="form-control" />
+        <span asp-validation-for="Naslov" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Opis" class="control-label"></label>
+        <input asp-for="Opis"  class="form-control" />
+        <span asp-validation-for="Opis" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Broj_stranica" class="control-label"></label>
+        <input asp-for="Broj_stranica"  class="form-control" />
+        <span asp-validation-for="Broj_stranica" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="God_izdavanja" class="control-label"></label>
+        <input asp-for="God_izdavanja" class="form-control" />
+        <span asp-validation-for="God_izdavanja" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="genreDropdown">Select Genre</label>
+        <select id="genreDropdown" name="SelectedZanr" class="form-control">
+            @foreach (var genre in Model.Zanri)
+            {
+                <option value="@genre">@genre</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="authorDropdown">Select Author</label>
+        <select id="authorDropdown" name="SelectedAutor" class="form-control">
+            @foreach (var author in Model.Autori)
+            {
+                <option value="@author">@author</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="languageDropdown">Select Language</label>
+        <select id="languageDropdown" name="SelectedJezik" class="form-control">
+            @foreach (var language in Model.Jezici)
+            {
+                <option value="@language">@language</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="ageGroupDropdown">Select Age Group</label>
+        <select id="ageGroupDropdown" name="SelectedUzrast" class="form-control">
+            @foreach (var ageGroup in Model.Uzrasti)
+            {
+                <option value="@ageGroup">@ageGroup</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

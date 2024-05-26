@@ -1,0 +1,63 @@
+﻿@model Knjiznica.Models.KnjigaViewModel
+
+@{
+    ViewData["Title"] = "Opis knjige";
+}
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <table class="table table-striped" style="font-family: 'Arial', sans-serif;">
+                <tbody>
+                    <!-- Prazni redovi za prostor prije naslova -->
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <!-- Naslov i autor -->
+                    <tr>
+                        <td colspan="2" style="font-size: 18px; font-weight: bold; text-align: center;" class="text-muted">@Model.Naslov</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="font-size: 18px; font-weight: bold; " class="text-muted">Autori:</td>
+                    </tr>
+                    <!-- Autori -->
+                    @foreach (var autor in Model.Autori)
+                    {
+                        <tr>
+                            <td></td>
+                            <td>@autor</td>
+                        </tr>
+                    }
+                    <!-- Ostali podaci -->
+                    <tr>
+                        <td style="font-weight: bold;">Jezik:</td>
+                        <td>@Model.Jezici.FirstOrDefault()</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Zanr:</td>
+                        <td>@Model.Zanri.FirstOrDefault()</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Uzrast:</td>
+                        <td>@Model.Uzrasti.FirstOrDefault()</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Broj Stranica:</td>
+                        <td>@Model.Broj_stranica</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Godina Izdavnaja:</td>
+                        <td>@Model.God_izdavanja</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Opis:</td>
+                        <td>@Model.Opis</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

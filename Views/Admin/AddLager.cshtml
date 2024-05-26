@@ -1,0 +1,30 @@
+﻿@model Knjiznica.Models.LagerViewModel
+<form action="AddLager" method="post">
+
+    <div class="text-danger">
+        @TempData["ErrorMessage"]
+    </div>
+
+    <div class="form-group">
+        <label for="Knjiga">Unesi Knjigu:</label>
+        <input type="text" id="Knjiga" name="Knjiga" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Submit" class="btn btn-primary" />
+    </div>
+</form>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Nazivi)
+        {
+            <tr>
+                <td>@item</td>
+            </tr>
+        }
+    </tbody>
+</table>

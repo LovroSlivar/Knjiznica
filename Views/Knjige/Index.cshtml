@@ -1,0 +1,71 @@
+﻿@model List<Knjiga>
+
+
+
+<div class="about-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="abouttitle">
+                    <h2>Naša Knjižnica</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Library -->
+<div class="Knjižnica">
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Naslov</th>
+                    <th>Žanr</th>
+                    <th>Jezik</th>
+                    <th>Autor</th>
+                    <th>Broj Stranica</th>
+                    <th>Godina Izdavanja</th>
+
+                    @if (User.Identity.IsAuthenticated == true)
+                    {
+                        @if (User.IsInRole("User") && !User.IsInRole("Admin"))
+                        {
+
+                            <th>Akcije</th>
+                        }
+                    }
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var knjiga in Model)
+                {
+                    <tr>
+                        <td>@knjiga.Naslov</td>
+                        <td>@knjiga.Zanr</td>
+                        <td>@knjiga.Jezik</td>
+                        <td>@knjiga.Autor</td>
+                        <td>@knjiga.Broj_stranica</td>
+                        <td>@knjiga.God_izdavanja</td>
+                        @if (User.Identity.IsAuthenticated == true)
+                        {
+                            @if (User.IsInRole("User") && !User.IsInRole("Admin"))
+                            {
+
+                                <td>
+                                    <a asp-action="PosudiKnjigu" asp-controller="Knjige" asp-route-lagerID="@knjiga.ID" class="btn btn-primary">Posudi</a>
+
+                                </td>
+
+                            }
+                        }
+
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+   
+</div>
+<!-- end Library -->

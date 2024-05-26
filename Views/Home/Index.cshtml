@@ -1,0 +1,174 @@
+﻿@model Knjiga
+
+
+
+
+<section class="slider_section">
+    <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
+
+</section>
+<div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="first-slide" src="images/banner.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption relative">
+                        <h1>@Model.Naslov</h1>
+                        <p>@Model.Autor </p>
+                        <div class="button_section"> <a class="main_bt" asp-action="Opis" asp-controller="Knjige">Više</a>  </div>
+                        
+                    </div>
+                </div>
+            </div>
+ </div>
+<!-- about -->
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="aboutheading">
+                    <h2>O <strong class="black">Nama</strong></h2>
+                    <span>Naša Knjižnica pruža širok izbor knjiga i digitalnih resursa te organizira raznovrsne programe za sve uzraste. Naša misija je poticanje čitanja i cjeloživotnog učenja. Posjetite nas i otkrijte svijet znanja!</span>
+                </div>
+            </div>
+        </div>
+        <div class="row border">
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                <div class="about-box">
+                    <p>
+                        Naša knjižnica je središte znanja i kulture, pružajući pristup širokoj zbirci knjiga, digitalnim resursima i raznovrsnim programima za sve uzraste. Naša misija je poticanje čitanja, podrška cjeloživotnom učenju i obogaćivanje zajednice. Ponosni smo što već [broj godina] godina služimo kao mjesto okupljanja za ljubitelje knjige i znanja. Posjetite nas i otkrijte svijet informacija i inspiracije!
+                    </p>
+                    <div class="button_section"> <a class="main_bt" asp-action="Privacy" asp-controller="Home">Više</a>  </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="about-box">
+                    <figure><img src="images/about.png" alt="img" /></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end about -->
+<!-- Library -->
+<div class="Library">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="titlepage">
+                    <h2>Naša <strong class="black">Knjižnica </strong></h2>
+                    <span>Knjige su prozori u svjetove koje još nismo istražili!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="Library-box">
+                        <figure><img src="images/Library-.jpg" alt="#" /></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="read-more">
+                    <div class="button_section"> <a class="main_bt" asp-action="Index" asp-controller="Knjige">Više</a>  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Library -->
+<!--Books -->
+<div class="Books">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="titlepage">
+                    <h2>Naše <strong class="black">Knjige </strong></h2>
+                    <span>Naše knjige su ključevi za otključavanje beskonačnih svjetova mašte i znanja. Svaki naslov donosi novu priliku za učenje, rast i bijeg u nezamislive avanture.</span>
+                </div>
+            </div>
+        </div>
+        <div class="row box">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                <div class="book-box">
+                    <figure><img src="images/book-1.jpg" alt="img" /></figure>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="book-box">
+                    <figure><img src="images/book-2.jpg" alt="img" /></figure>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                <div class="book-box">
+                    <figure><img src="images/book-1.jpg" alt="img" /></figure>
+                </div>
+            </div>
+            <div class="col-md-6 offset-md-3">
+                <p>Svaka knjiga u našoj zbirci je putovanje koje čeka da bude otkriveno. Otvorite korice i krenite na putovanje kroz vrijeme, prostore i ideje koje će vas obogatiti i inspirirati</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- end Books -->
+<!-- Contact -->
+<div class="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage3">
+                    <h2>Kontakt</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                <label for="subject">Naslov</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                <label for="message">Poruka</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit" onclick="PosaljiUpit()">Pošalji poruku</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- end Contact -->
+<script>
+    function PosaljiUpit() {
+
+        var recipient = 'lovro.slivar@gmail.com';
+
+        var subject = document.getElementById('subject').value;
+
+        var message = document.getElementById('message').value;
+
+        var body = message;
+
+        var emailLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+        window.open(emailLink);
+    }
+</script>
