@@ -1,6 +1,7 @@
-﻿@model List<Knjiga>
-
-
+﻿@model IndexKnjigaViewModel
+@{
+    ViewData["Title"] = "Naša Knjižnica";
+}
 
 <div class="about-bg">
     <div class="container">
@@ -13,10 +14,45 @@
         </div>
     </div>
 </div>
-<!-- Library -->
+
 <div class="Knjižnica">
     <div class="container">
-        <table class="table table-striped">
+        <!-- Form for filtering -->
+        <div class="form-row mb-4">
+            <div class="form-group col-md-3">
+                <label for="zanr">Žanr</label>
+                <select id="zanr" class="form-control">
+                    <option value="">Svi žanrovi</option>
+                    @foreach (var genre in Model.Zanri)
+                    {
+                        <option value="@genre">@genre</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="jezik">Jezik</label>
+                <select id="jezik" class="form-control">
+                    <option value="">Svi jezici</option>
+                    @foreach (var jezik in Model.Jezici)
+                    {
+                        <option value="@jezik">@jezik</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="autor">Autor</label>
+                <select id="autor" class="form-control">
+                    <option value="">Svi autori</option>
+                    @foreach (var autor in Model.Autori)
+                    {
+                        <option value="@autor">@autor</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <!-- Table for displaying books -->
+        <table id="booksTable" class="table table-striped">
             <thead>
                 <tr>
                     <th>Naslov</th>
@@ -25,20 +61,14 @@
                     <th>Autor</th>
                     <th>Broj Stranica</th>
                     <th>Godina Izdavanja</th>
-
-                    @if (User.Identity.IsAuthenticated == true)
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("User") && !User.IsInRole("Admin"))
                     {
-                        @if (User.IsInRole("User") && !User.IsInRole("Admin"))
-                        {
-
-                            <th>Akcije</th>
-                        }
+                        <th>Akcije</th>
                     }
-
                 </tr>
             </thead>
             <tbody>
-                @foreach (var knjiga in Model)
+                @foreach (var knjiga in Model.knjige)
                 {
                     <tr>
                         <td>@knjiga.Naslov</td>
@@ -47,25 +77,58 @@
                         <td>@knjiga.Autor</td>
                         <td>@knjiga.Broj_stranica</td>
                         <td>@knjiga.God_izdavanja</td>
-                        @if (User.Identity.IsAuthenticated == true)
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("User") && !User.IsInRole("Admin"))
                         {
-                            @if (User.IsInRole("User") && !User.IsInRole("Admin"))
-                            {
-
-                                <td>
-                                    <a asp-action="PosudiKnjigu" asp-controller="Knjige" asp-route-lagerID="@knjiga.ID" class="btn btn-primary">Posudi</a>
-
-                                </td>
-
-                            }
+                            <td>
+                                <a asp-action="PosudiKnjigu" asp-controller="Knjige" asp-route-lagerID="@knjiga.ID" class="btn btn-primary">Posudi</a>
+                            </td>
                         }
-
                     </tr>
                 }
             </tbody>
-
         </table>
     </div>
-   
 </div>
-<!-- end Library -->
+@section Scripts {
+    <script>
+        // Function to filter books
+        function filterBooks() {
+            var genre = document.getElementById('zanr').value;
+            var jezik = document.getElementById('jezik').value;
+            var autor = document.getElementById('autor').value;
+
+            var table = document.getElementById('booksTable');
+            var rows = table.getElementsByTagName('tr');
+
+            // Loop through all table rows (starting from index 1 to skip the header row)
+            for (var i = 1; i < rows.length; i++) {
+                var cells = rows[i].getElementsByTagName('td');
+                var showRow = true; // Flag to determine whether to show the row
+
+                // Check if genre filter is set and doesn't match
+                if (genre && cells[1].textContent !== genre) {
+                    showRow = false;
+                }
+                // Check if jezik filter is set and doesn't match
+                if (jezik && cells[2].textContent !== jezik) {
+                    showRow = false;
+                }
+                // Check if autor filter is set and doesn't match
+                if (autor && cells[3].textContent !== autor) {
+                    showRow = false;
+                }
+
+                // Show/hide row based on filter results
+                rows[i].style.display = showRow ? '' : 'none';
+            }
+        }
+
+        // Add event listeners to filter dropdowns
+        document.getElementById('zanr').addEventListener('change', filterBooks);
+        document.getElementById('jezik').addEventListener('change', filterBooks);
+        document.getElementById('autor').addEventListener('change', filterBooks);
+
+        // Call filterBooks() initially to show all books
+        filterBooks();
+    </script>
+}

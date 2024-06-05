@@ -2,24 +2,26 @@
 
 
 
-
 <section class="slider_section">
     <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
-
-</section>
-<div class="carousel-inner">
+        <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="first-slide" src="images/banner.jpg" alt="First slide">
                 <div class="container">
                     <div class="carousel-caption relative">
-                        <h1>@Model.Naslov</h1>
-                        <p>@Model.Autor </p>
-                        <div class="button_section"> <a class="main_bt" asp-action="Opis" asp-controller="Knjige">Više</a>  </div>
-                        
+                        <h1 style="font-family: 'Pacifico', cursive; font-size: 48px; font-weight: bold; text-transform: uppercase;">@Model.Naslov</h1>
+                        <p style="font-family: Arial, sans-serif; font-size: 20px; font-style: italic;">@Model.Autor </p>
+                        <div class="button_section">
+                            <a class="main_bt" asp-action="Opis" asp-route-id="@Model.ID" asp-controller="Knjige">Više</a>
+                        </div>
                     </div>
                 </div>
             </div>
- </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- about -->
 <div class="about">
     <div class="container">

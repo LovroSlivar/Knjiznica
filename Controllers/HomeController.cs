@@ -49,28 +49,27 @@ namespace Knjiznica.Controllers
                 connection.Open();
                 //Upit za dohvat danasnje knjige
                 string query = @"SELECT knjiga.ID, knjiga.naslov, knjiga.opis,
-                         autor.ime_prezime AS AutorNaziv,
-                         zanr.naziv AS ZanrNaziv,
-                         jezik.naziv AS JezikNaziv,
-                         uzrast.naziv AS UzrastNaziv,
-                         knjiga.godina_izdavanja AS GodinaIzdavanja, 
-                         knjiga.broj_stranica AS BrojStanica 
-                         FROM knjiga
-                         JOIN dogadanje ON knjiga.ID = dogadanje.knjigaID
-                         JOIN autor ON knjiga.autorID = autor.ID
-                         JOIN zanr ON knjiga.zanrID = zanr.ID
-                         JOIN jezik ON knjiga.jezikID = jezik.ID
-                         JOIN uzrast ON knjiga.uzrastID = uzrast.ID
-                         WHERE @date BETWEEN dogadanje.prikaz_od AND dogadanje.prokaz_do AND dogadanje.aktivan = 1";
-                DateTime date = DateTime.Now;
-                var command = new MySqlCommand(query, connection);
-                command.Parameters.AddWithValue("@date", date.ToString("yyyy-MM-dd"));
-                using (var reader = command.ExecuteReader())
+                             autor.ime_prezime AS AutorNaziv,
+                             zanr.naziv AS ZanrNaziv,
+                             jezik.naziv AS JezikNaziv,
+                             uzrast.naziv AS UzrastNaziv,
+                             knjiga.godina_izdavanja AS GodinaIzdavanja, 
+                             knjiga.broj_stranica AS BrojStanica 
+                             FROM knjiga
+                             JOIN dogadanje ON knjiga.ID = dogadanje.knjigaID
+                             JOIN autor ON knjiga.autorID = autor.ID
+                             JOIN zanr ON knjiga.zanrID = zanr.ID
+                             JOIN jezik ON knjiga.jezikID = jezik.ID
+                             JOIN uzrast ON knjiga.uzrastID = uzrast.ID
+                             WHERE DATE(dogadanje.prikaz_od) = CURDATE() AND dogadanje.aktivan = 1";
+
+                using (var command = new MySqlCommand(query, connection))
                 {
-                    if (reader.HasRows)
+                    using (var reader = command.ExecuteReader())
                     {
                         if (reader.Read())
                         {
+                            knjiga = new Knjiga();
                             knjiga.ID = reader.GetInt32("ID");
                             knjiga.Naslov = reader.GetString("naslov");
                             knjiga.Opis = reader.GetString("opis");
@@ -82,7 +81,6 @@ namespace Knjiznica.Controllers
                             knjiga.Broj_stranica = reader.GetInt32("BrojStanica");
                         }
                     }
-
                 }
             }
             catch (Exception)

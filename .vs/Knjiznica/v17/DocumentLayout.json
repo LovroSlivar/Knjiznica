@@ -3,120 +3,20 @@
   "WorkspaceRootPath": "C:\\Knji\u017Enica\\Knjiznica\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\knjige\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\knjige\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\knjige\\posudiknjigu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\knjige\\posudiknjigu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\home\\greska.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\home\\greska.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\knjige\\posudeneknjige.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\knjige\\posudeneknjige.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\knjige\\opis.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\knjige\\opis.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\knjige\\kasnjenje.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\knjige\\kasnjenje.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\admin\\createknjiga.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\admin\\createknjiga.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\admin\\createautor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\admin\\createautor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\admin\\addlager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\admin\\addlager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\models\\rezervacije.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:models\\rezervacije.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\models\\mylists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:models\\mylists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\models\\lagerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:models\\lagerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\models\\knjigaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:models\\knjigaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\models\\knjiga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:models\\knjiga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\controllers\\knjigecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:controllers\\knjigecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\admin\\createzanr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\admin\\createzanr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\admin\\createuzrast.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\admin\\createuzrast.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|c:\\knji\u017Enica\\knjiznica\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{694BDDAA-01FF-40FB-8D68-B8DC2BF4AE26}|Knjiznica.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -126,239 +26,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 26,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PosudiKnjigu.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Knjige\\PosudiKnjigu.cshtml",
-              "RelativeDocumentMoniker": "Views\\Knjige\\PosudiKnjigu.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Knjige\\PosudiKnjigu.cshtml",
-              "RelativeToolTip": "Views\\Knjige\\PosudiKnjigu.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T20:32:16.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PosudeneKnjige.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Knjige\\PosudeneKnjige.cshtml",
-              "RelativeDocumentMoniker": "Views\\Knjige\\PosudeneKnjige.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Knjige\\PosudeneKnjige.cshtml",
-              "RelativeToolTip": "Views\\Knjige\\PosudeneKnjige.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T20:06:31.478Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Kasnjenje.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Knjige\\Kasnjenje.cshtml",
-              "RelativeDocumentMoniker": "Views\\Knjige\\Kasnjenje.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Knjige\\Kasnjenje.cshtml",
-              "RelativeToolTip": "Views\\Knjige\\Kasnjenje.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T16:58:04.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AddLager.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Admin\\AddLager.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\AddLager.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Admin\\AddLager.cshtml",
-              "RelativeToolTip": "Views\\Admin\\AddLager.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T16:57:45.188Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CreateAutor.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Admin\\CreateAutor.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\CreateAutor.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Admin\\CreateAutor.cshtml",
-              "RelativeToolTip": "Views\\Admin\\CreateAutor.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T16:57:44.488Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Rezervacije.cs",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Models\\Rezervacije.cs",
-              "RelativeDocumentMoniker": "Models\\Rezervacije.cs",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Models\\Rezervacije.cs",
-              "RelativeToolTip": "Models\\Rezervacije.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T16:57:40.558Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MyLists.cs",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Models\\MyLists.cs",
-              "RelativeDocumentMoniker": "Models\\MyLists.cs",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Models\\MyLists.cs",
-              "RelativeToolTip": "Models\\MyLists.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T16:57:39.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LagerViewModel.cs",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Models\\LagerViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\LagerViewModel.cs",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Models\\LagerViewModel.cs",
-              "RelativeToolTip": "Models\\LagerViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T16:57:38.98Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T16:56:52.227Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Knjiga.cs",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Models\\Knjiga.cs",
-              "RelativeDocumentMoniker": "Models\\Knjiga.cs",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Models\\Knjiga.cs",
-              "RelativeToolTip": "Models\\Knjiga.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T15:10:46.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T15:07:47.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "CreateZanr.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Admin\\CreateZanr.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\CreateZanr.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Admin\\CreateZanr.cshtml",
-              "RelativeToolTip": "Views\\Admin\\CreateZanr.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T15:07:39.728Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 1,
               "Title": "CreateUzrast.cshtml",
               "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Admin\\CreateUzrast.cshtml",
               "RelativeDocumentMoniker": "Views\\Admin\\CreateUzrast.cshtml",
               "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Admin\\CreateUzrast.cshtml",
               "RelativeToolTip": "Views\\Admin\\CreateUzrast.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T15:07:39.106Z"
+              "WhenOpened": "2024-06-05T23:11:44.246Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Greska.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Home\\Greska.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Greska.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Home\\Greska.cshtml",
-              "RelativeToolTip": "Views\\Home\\Greska.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T15:07:36.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T15:07:33.585Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T14:58:36.168Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "CreateKnjiga.cshtml",
               "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Admin\\CreateKnjiga.cshtml",
               "RelativeDocumentMoniker": "Views\\Admin\\CreateKnjiga.cshtml",
               "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Admin\\CreateKnjiga.cshtml",
               "RelativeToolTip": "Views\\Admin\\CreateKnjiga.cshtml",
-              "ViewState": "AQIAABcAAAAAAAAAAAAqwEkAAAAHAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAEkAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T14:57:29.391Z"
+              "WhenOpened": "2024-06-05T23:06:47.554Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Knjige\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Knjige\\Index.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Knjige\\Index.cshtml",
-              "RelativeToolTip": "Views\\Knjige\\Index.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T14:44:03.534Z"
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAQwCoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T23:04:08.267Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T14:43:46.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -366,116 +77,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-23T14:43:43.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T14:43:42.222Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Views\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T14:43:39.736Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T14:43:33.045Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T14:43:13.051Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAADwv2UAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T14:33:30.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "KnjigaViewModel.cs",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Models\\KnjigaViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\KnjigaViewModel.cs",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Models\\KnjigaViewModel.cs",
-              "RelativeToolTip": "Models\\KnjigaViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T14:22:59.665Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAHoAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T14:20:31.199Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Opis.cshtml",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Knjige\\Opis.cshtml",
-              "RelativeDocumentMoniker": "Views\\Knjige\\Opis.cshtml",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Views\\Knjige\\Opis.cshtml",
-              "RelativeToolTip": "Views\\Knjige\\Opis.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T14:17:51.172Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "KnjigeController.cs",
-              "DocumentMoniker": "C:\\Knji\u017Enica\\Knjiznica\\Controllers\\KnjigeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\KnjigeController.cs",
-              "ToolTip": "C:\\Knji\u017Enica\\Knjiznica\\Controllers\\KnjigeController.cs",
-              "RelativeToolTip": "Controllers\\KnjigeController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAmwAQCAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T14:16:38.718Z"
+              "WhenOpened": "2024-06-04T20:02:09.439Z"
             }
           ]
         }

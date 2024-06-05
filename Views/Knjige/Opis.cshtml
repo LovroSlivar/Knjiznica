@@ -9,29 +9,26 @@
         <div class="card-body">
             <table class="table table-striped" style="font-family: 'Arial', sans-serif;">
                 <tbody>
-                    <!-- Prazni redovi za prostor prije naslova -->
                     <tr>
                         <td colspan="2">&nbsp;</td>
                     </tr>
                     <tr>
                         <td colspan="2">&nbsp;</td>
                     </tr>
-                    <!-- Naslov i autor -->
                     <tr>
                         <td colspan="2" style="font-size: 18px; font-weight: bold; text-align: center;" class="text-muted">@Model.Naslov</td>
                     </tr>
                     <tr>
-                        <td colspan="2" style="font-size: 18px; font-weight: bold; " class="text-muted">Autori:</td>
+                        <td style="font-size: 18px; font-weight: bold;" class="text-muted">Autori:</td>
+                        <td>
+                            @for (int i = 0; i < Model.Autori.Count; i++)
+                            {
+                                @Model.Autori[i]
+
+                                @((i < Model.Autori.Count - 1) ? ", " : "")
+                            }
+                        </td>
                     </tr>
-                    <!-- Autori -->
-                    @foreach (var autor in Model.Autori)
-                    {
-                        <tr>
-                            <td></td>
-                            <td>@autor</td>
-                        </tr>
-                    }
-                    <!-- Ostali podaci -->
                     <tr>
                         <td style="font-weight: bold;">Jezik:</td>
                         <td>@Model.Jezici.FirstOrDefault()</td>

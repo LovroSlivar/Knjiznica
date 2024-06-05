@@ -299,6 +299,7 @@ namespace Knjiznica.Controllers
             int jezikID=0;
             int autorID=0;
             int uzrastID=0;
+            if (ModelState.IsValid) { 
             try
             {
                 connection.Open();
@@ -381,6 +382,11 @@ namespace Knjiznica.Controllers
                 throw;
             }
             finally { connection.Close(); }
+            }
+            else
+            {
+                return View(model);
+            }
             return RedirectToAction("Index", "Home");
         }
         

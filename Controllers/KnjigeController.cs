@@ -1,4 +1,5 @@
-﻿using Knjiznica.Models;
+﻿using Google.Protobuf.Collections;
+using Knjiznica.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -9,23 +10,25 @@ namespace Knjiznica.Controllers
     public class KnjigeController : Controller
     {
         // Deklaracija variabli
+        private readonly MyLists myLists;
         public MySqlConnection connection;
         private readonly string connectionString;
         private readonly UserManager<IdentityUser> userManager;
 
         // Inicijalizacija variabli
-        public KnjigeController(string connectionString, UserManager<IdentityUser> userManager)
+        public KnjigeController(string connectionString, UserManager<IdentityUser> userManager,MyLists myLists)
         {
             this.connectionString = connectionString;
             connection = new MySqlConnection(connectionString);
             this.userManager = userManager;
+            this.myLists = myLists;
         }
 
         // Metoda za prikazivanje knjiga na lageru
         public IActionResult Index()
         {
             //Lista u kojoj su dostupne knjige na lageru
-            List<Knjiga> knjige = new List<Knjiga>();
+            IndexKnjigaViewModel model = new IndexKnjigaViewModel();
 
             // Try catch za hvatanje nepodrzanih gresaka
             try
@@ -68,24 +71,29 @@ namespace Knjiznica.Controllers
                         knjiga.ID = reader.GetInt32("ID");
 
                         //Dodati taj navedeni objekt u proslo-navedenu listu
-                        knjige.Add(knjiga);
+                        model.knjige.Add(knjiga);
                     }
 
                 }
-
+                model.Autori = myLists.Autori;
+                model.Zanri = myLists.Zanri;
+                model.Uzrasti = myLists.Uzrasti;
+                model.Jezici = myLists.Jezici;
             }
+
             //Hvatanje nepodrzane greske
             catch (Exception)
             {
                 return RedirectToAction("Greska", "Home");
             }
+
             //Uvijek se na kraju zatvara konekcija na bazu
             finally
             {
                 connection.Close();
             }
             //Vracanje listu knijga na lageru na view
-            return View(knjige);
+            return View(model);
         }
         //Autorizacija ove metode samo za usere
         [Authorize(Roles = "User")]
@@ -539,13 +547,11 @@ namespace Knjiznica.Controllers
                     JOIN uzrast ON knjiga.uzrastID = uzrast.ID
                     JOIN dogadanje ON knjiga.ID = dogadanje.knjigaID
                 WHERE 
-                    knjiga.ID = @KnjigaID
-                    AND @date BETWEEN dogadanje.prikaz_od AND dogadanje.prokaz_do
-                    AND dogadanje.aktivan = 1;";
-            
+                    knjiga.ID = @KnjigaID ;";
+
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@KnjigaID", id);
-                command.Parameters.AddWithValue("@date", date.ToString("yyyy-MM-dd"));
+               
 
                 using (MySqlDataReader reader = command.ExecuteReader())
                 {
@@ -576,5 +582,85 @@ namespace Knjiznica.Controllers
 
             return View(knjiga);
         }
+        public IActionResult Filtriraj(string zanr = null, string jezik = null, string autor = null, int? godinaOd = null, int? godinaDo = null)
+        {
+            List<Knjiga> knjige = new List<Knjiga>();
+
+            try
+            {
+                connection.Open();
+                string query = @"SELECT 
+                                    knjiga.naslov AS Naslov,
+                                    lager.ID as ID,
+                                    knjiga.broj_stranica AS BrojStranica,
+                                    knjiga.godina_izdavanja AS GodIzdavanja,
+                                    zanr.naziv AS ZanrNaziv,
+                                    jezik.naziv AS JezikNaziv,
+                                    autor.ime_prezime AS AutorImePrezime
+                                FROM 
+                                    knjiga
+                                    JOIN lager ON knjiga.ID = lager.knjigaID
+                                    JOIN zanr ON knjiga.zanrID = zanr.ID
+                                    JOIN jezik ON knjiga.jezikID = jezik.ID
+                                    JOIN autor ON knjiga.autorID = autor.ID
+                                WHERE 
+                                    lager.aktivan = 1";
+
+                // Dodavanje filtera u upit
+                if (!string.IsNullOrEmpty(zanr))
+                    query += " AND zanr.naziv = @Zanr";
+                if (!string.IsNullOrEmpty(jezik))
+                    query += " AND jezik.naziv = @Jezik";
+                if (!string.IsNullOrEmpty(autor))
+                    query += " AND autor.ime_prezime = @Autor";
+                if (godinaOd.HasValue)
+                    query += " AND knjiga.godina_izdavanja >= @GodinaOd";
+                if (godinaDo.HasValue)
+                    query += " AND knjiga.godina_izdavanja <= @GodinaDo";
+
+                MySqlCommand command = new MySqlCommand(query, connection);
+
+                // Dodavanje parametara u upit
+                if (!string.IsNullOrEmpty(zanr))
+                    command.Parameters.AddWithValue("@Zanr", zanr);
+                if (!string.IsNullOrEmpty(jezik))
+                    command.Parameters.AddWithValue("@Jezik", jezik);
+                if (!string.IsNullOrEmpty(autor))
+                    command.Parameters.AddWithValue("@Autor", autor);
+                if (godinaOd.HasValue)
+                    command.Parameters.AddWithValue("@GodinaOd", godinaOd.Value);
+                if (godinaDo.HasValue)
+                    command.Parameters.AddWithValue("@GodinaDo", godinaDo.Value);
+
+                using (MySqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Knjiga knjiga = new Knjiga
+                        {
+                            Naslov = reader.GetString("Naslov"),
+                            Jezik = reader.GetString("JezikNaziv"),
+                            Autor = reader.GetString("AutorImePrezime"),
+                            Zanr = reader.GetString("ZanrNaziv"),
+                            Broj_stranica = reader.GetInt32("BrojStranica"),
+                            God_izdavanja = reader.GetInt32("GodIzdavanja"),
+                            ID = reader.GetInt32("ID")
+                        };
+
+                        knjige.Add(knjiga);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                return RedirectToAction("Greska", "Home");
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return View("Index", knjige);
+        }
+
     }
 }
